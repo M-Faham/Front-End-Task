@@ -1,6 +1,6 @@
 # Front-End Task
 A Front End task for job using #Angular V8
-<br>P.S.
+<br>*NOTE*
 <br>The app uses IP to get the user location it can varies form device to other device
 
 
