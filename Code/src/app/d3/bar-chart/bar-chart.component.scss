@@ -1,0 +1,36 @@
+/* Lighten the axis lines */
+#x-axis path,
+#y-axis line,
+#y-axis path {
+  stroke: #666;
+}
+/* Remove the tick marks on the x-axis */
+#x-axis .tick line {
+  visibility: hidden;
+}
+
+text {
+  fill: #666;
+  font-size: 12px;
+}
+
+#x-axis text {
+  font-weight: 600;
+}
+.chart-container {
+  height: 400px;
+}
+.chart {
+  height: 700px !important;
+  width: 700px !important;
+}
+::ng-deep svg {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin-left: -20px;
+}
+::ng-deep rect {
+  fill: #28c587;
+}

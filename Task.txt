@@ -1,0 +1,42 @@
+-----------------------------------------------------
+_______ Expected Files _______:
+
+1- [DONE] The project (NGx, D3, Unit tests, E2E)
+2- [DONE] Powerpoint
+3- [DONE] The Design
+
+---------------- Weather Forcast ----------------
+_______ SCREENS _______:
+
+1-Landing Page:
+	- [DONE] Get user GEO
+	- [DONE] Get user's country weather summary
+	- [DONE] Dispaly The Country's cities
+
+2- Selected City Weather
+	- [DONE] Summary
+	- [DONE] Weather statistics
+	- [DONE] Use D3
+	- [DONE] Historical weather information for this city  
+	- [DONE] Add Charts, tables and…
+	
+
+_______ Design _______:
+
+1- [DONE] Using XD, wireframes and sketchs
+2- [DONE] user interactions, illustrations, and description of data visualization
+
+_______ Code _______:
+
+1- [DONE] Angular 2
+2- [DONE] D3 (use native JS libary)
+3- [NOT]User Interactions (Expand, Resize)
+4- [Semi-DONE]Unit testing
+5- [NOT]E2E testing
+
+_______ Power Point _______:
+
+1- [DONE]The work
+2- [DONE]screeshots of the end product 
+3- [DONE]other ideas
+

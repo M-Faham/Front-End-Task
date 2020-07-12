@@ -1,0 +1,100 @@
+<div class="container-fluid">
+
+
+  <div class="row">
+
+    <!-- Title -->
+
+    <div class="col-12 header mb-5">
+      <div class="title text-center">
+        {{currentCountry?.country}}
+      </div>
+    </div>
+
+    <!-- -------------- SECTION  Time -------------- -->
+
+    <div class="col-md-6 col-12 header mb-5">
+
+      <!--  Date -->
+
+      <div class="three-rows text-center">
+        <div>
+          {{currentTime | date:'EEEE'}}
+        </div>
+        <div class="center">
+          {{currentTime | date:'mediumTime'}}
+        </div>
+        <div>
+          {{currentTime | date:'mediumDate'}}
+        </div>
+      </div>
+
+    </div>
+
+    <!-- -------------- SECTION  current weather -------------- -->
+
+    <div class="col-md-6 col-12  three-rows justify-content-center">
+
+      <div class="text-center">
+        Last updated: <span>{{currentWeather?.current_condition[0]?.observation_time}} </span>
+      </div>
+
+      <div class="center col-12 text-center">
+        {{currentWeather?.current_condition[0]?.temp_C}}&#8451; /
+        {{currentWeather?.current_condition[0]?.temp_F}}&#8457;
+        <img [attr.src]="currentWeather?.current_condition[0]?.weatherIconUrl[0].value">
+      </div>
+
+
+      <div class="text-center">
+        Feels Like: <span>{{currentWeather?.current_condition[0]?.FeelsLikeC}}
+          &#8451; /
+          {{currentWeather?.current_condition[0]?.FeelsLikeF}}&#8457;</span>
+      </div>
+
+
+    </div>
+
+    <!-- -------------- SECTION  Wind -------------- -->
+
+    <div class="col-12 justify-content-between text-center mt-lg-0 mt-5">
+
+      Wind: {{currentWeather?.current_condition[0].windspeedKmph}}Km/h
+      {{currentWeather?.current_condition[0].winddir16Point}}
+      {{currentWeather?.current_condition[0].winddirDegree}} degrees
+      <span class="inline-block"
+        [ngStyle]="{'transform': 'rotate('+  currentWeather?.current_condition[0]?.winddirDegree+'deg)'}">
+        &#8592;
+      </span>
+
+
+    </div>
+    <div class="col-12 justify-content-between text-center mt-lg-1 mt-2">
+      pressure: {{currentWeather?.current_condition[0].pressure}} mb
+    </div>
+
+  </div>
+
+
+
+
+  <!-- -------------- SECTION  Cities -------------- -->
+
+
+  <div class="contianer mt-5">
+    <div class="row justify-content-center">
+
+      <div class="col-lg-3 col-md-3 col-sm-4 col-9">
+        <div class="row">
+          <div class="col-6" [class.border-right]="ind%2 ==0" [class.text-right]="ind%2 ==0"
+            [class.text-left]="ind%2 ==1" *ngFor="let city of cities; let ind = index">
+            <a href="javascript;" [routerLink]="[city]">{{city | uppercase}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>

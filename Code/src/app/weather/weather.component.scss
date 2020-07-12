@@ -1,0 +1,26 @@
+* {
+  color: white;
+}
+
+.header {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  .title {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    line-height: 3;
+  }
+}
+
+.three-rows {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  .center {
+    font-size: 3rem;
+  }
+}
+.inline-block {
+  display: inline-block;
+}
